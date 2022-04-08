@@ -1,0 +1,32 @@
+<div>
+    <h2>Customer Details Are:::</h2>
+  </div>
+    <table class="danger  table table-bordered  table-striped  ">
+      <thead>
+        <tr>
+         
+          <th scope="col">id</th>
+          <th scope="col">firstname</th>
+
+          <th scope="col">lastname</th>
+      
+   
+          <th scope="col">emailid</th>
+          <th scope="col">Actions</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user11 of employee1">
+           <td>{{user11.id}}</td>
+          
+           <td>{{user11.firstname}}</td>
+          
+           <td>{{user11.lastname}}</td>
+           <td>{{user11.emailid}}</td>
+        <td><button  class="btn btn-info"    (click)="updateEmployee(user11.id)">Update</button>
+        <button  class="btn btn-danger" style="margin-left: 10px;"   (click)="deleteEmployee(user11.id)">Delete</button>
+        <button  class="btn btn-success" style="margin-left: 10px;"   (click)="employeeDetails(user11.id)">View</button></td>
+        </tr>
+      </tbody>
+    </table>
+  
+  

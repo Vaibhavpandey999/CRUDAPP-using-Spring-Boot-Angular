@@ -1,0 +1,21 @@
+<div class="col-md-6 offset-md-3"> 
+    <h2>Update Employee</h2>
+     <form>
+         <div class="form-group">
+             <label>First Name</label>
+          <input type="text" id="firstname" class="form-control" name="firstname" [(ngModel)]="employee2.firstname" >
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+             <input type="text" id="lastname" class="form-control" name="firstname" [(ngModel)]="employee2.lastname" >
+               </div>
+    
+    
+              <div class="form-group">
+                <label>Email</label>
+             <input type="text" id="emailid" class="form-control" name="emailid" [(ngModel)]="employee2.emailid" >
+               </div>
+               <br>
+               <button type="submit" (click)="updateemp()" class="btn btn-success">Update Employee</button>
+     </form>
+     </div>
